@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B0F0C">
+    <title>GREEN CORE | Contador interativo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="contador.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <header class="site-header">
+        <p class="eyebrow">LABORATÓRIO DE INTERAÇÃO / 01</p>
+        <p class="brand">GEEN <span>CORE</span></p>
+    </header>
+    <main class="layout" id="main">
+        <section class="counter-panel" aria-labelledby="page-title">
+            <p class="eyebrow">CONTROLE DE SESSÃO</p>
+            <h1 id="page-title">Contador interativo</h1>
+            <p class="description">
+                Altere o número usando os botões. Cada ação atualiza
+                o resultado sem retirar o foco do controle.
+            </p>
+            <div class="counter-display">
+                <p class="counter-label" id="counter-label">VALOR ATUAL</p>
+                <output id="counter-value" aria-labelledby="counter-label" aria-live="polite" aria-atomic="true">0</output>
+            </div>
+            <div class="controls" role="group" aria-label="Controles do contador">
+                <button id="decrease-button" class="control secondary" type="button">- Diminuir</button>
+                <button id="increase-button" class="control primary" type="button">+ Aumentar</button>
+                <button id="reset-button" class="control reset" type="button">Zerar contador</button>
+            </div>
+            <p class="help-text">
+                Teclado: use Tab para navegar e Enter ou Espaço para ativar.
+            </p>
+        </section>
+        <figure class="gpu-figure">
+            <img 
+            src="https://iprsoftwaremedia.com/219/files/20240/659a4c083d6332fd16032944_geforce-rtx-4080-super-gpu-image/geforce-rtx-4080-super-gpu-image_b5b72f71-174d-445d-b74e-9c70e3f85a26-prv.jpg?v=b5b72f71-174d-445d-b74e-9c70e3f85a26"
+            alt="Fotografia oficial de uma placa de vídeo GeForce RTX 4080 SUPER, vista em ângulo."
+            width="1000"
+            height="750"
+            loading="lazy"
+            decoding="async">
+            <figcaption>
+                Fotografia: <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4080-family/">NVIDIA SITE</a>. Descrição técnica da placa de vídeo.
+            </figcaption>
+        </figure>
+    </main>
+    <footer class="site-footer">
+        <p>GREEN CORE é um projeto educativo independente.</p>
+        <p>Não é um produto oficial nem uma página afiliada à NVIDIA.</p>
+    </footer>
+</body>
+</html>
+</html>
